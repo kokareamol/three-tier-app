@@ -2,6 +2,14 @@ provider "aws" {
   region = "ap-south-1"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "terraform-codestore2"  
+    key    = "eks/terraform.tfstate"  
+    region = "ap-south-1" 
+  }
+}
+
 data "aws_iam_policy_document" "assume_role" {
   statement {
     effect = "Allow"
