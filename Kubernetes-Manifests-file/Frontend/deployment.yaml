@@ -22,8 +22,6 @@ spec:
       labels:
         role: frontend
     spec: 
-      imagePullSecrets:
-      - name: ecr-registry-secret
       containers:
       - name: frontend
         image: public.ecr.aws/h1p7m8a0/three-tier-frontend:latest
