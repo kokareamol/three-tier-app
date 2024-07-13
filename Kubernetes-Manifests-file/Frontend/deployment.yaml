@@ -16,6 +16,7 @@ spec:
   selector:
     matchLabels: 
       role: frontend
+      
   template:
     metadata:
       labels:
