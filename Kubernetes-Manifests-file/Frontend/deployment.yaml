@@ -15,8 +15,7 @@ spec:
       maxUnavailable: 25%
   selector:
     matchLabels: 
-      role: frontend
-      
+      role: frontend    
   template:
     metadata:
       labels:
